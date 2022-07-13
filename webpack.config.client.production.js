@@ -2,7 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 const CURRENT_WORKING_DIR = process.cwd()
 
-export const config = {
+const config = {
     mode: "production", entry: [
         path.join(CURRENT_WORKING_DIR, 'client/main.js')],
     output: {
@@ -15,3 +15,5 @@ export const config = {
         }]
     }
 }
+
+module.exports = config

@@ -4,7 +4,7 @@ const CURRENT_WORKING_DIR = process.cwd()
 
 const nodeExternals = require('webpack-node-externals')
 
-export const config = {
+const config = {
     name: "server",
     entry: [path.join(CURRENT_WORKING_DIR, './server/server.js')], target: "node",
     output: {
@@ -19,3 +19,5 @@ export const config = {
         }]
     }
 }
+
+module.exports = config
